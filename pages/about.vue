@@ -1,23 +1,14 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
-        <v-card>
-          <v-card-title>
-            Here's a little about me.
-          </v-card-title>
-          <v-card-text>
-            
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-card>
+    <v-card-title>
+      Here's a little bit about me.
+    </v-card-title>
+  </v-card>
 </template>
 
 <script>
 export default {
-
+  name: 'AboutMe',
 }
 </script>
 

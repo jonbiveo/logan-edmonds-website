@@ -5,8 +5,11 @@
       fixed
       app
     >
-      <v-toolbar-title v-text="title" />
+      <v-btn to="./" v-text="title"></v-btn>
       <v-spacer />
+      <v-btn icon href="https://github.com/jonbiveo" target="_blank"><v-icon>mdi-github</v-icon></v-btn>
+      <v-btn icon href="https://www.linkedin.com/in/logantedmonds/"><v-icon>mdi-linkedin</v-icon></v-btn>
+      <v-btn icon href="mailto:logantedmonds@gmail.com"><v-icon>mdi-email</v-icon></v-btn>
       <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
@@ -28,7 +31,7 @@
       <v-list>
         <v-list-item @click.native="right = !right">
           <v-list-item-action>
-            <v-icon light>
+            <v-icon>
               mdi-repeat
             </v-icon>
           </v-list-item-action>
@@ -47,6 +50,7 @@
 
 <script>
 export default {
+  name: 'DefaultView',
   data () {
     return {
       clipped: false,

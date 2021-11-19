@@ -16,7 +16,7 @@
     <v-row justify="center" align="center" class="mb-6">
       <v-col md="4">
         <v-card class=" pa-2" max-width="400px">
-          <v-card-actions>
+          <v-card-actions class="justify-center">
             <v-btn to="./about">
               About
             </v-btn>
@@ -25,7 +25,7 @@
       </v-col>
       <v-col md="4">
         <v-card class="pa-2" max-width="400px">
-          <v-card-actions>
+          <v-card-actions class="justify-center">
             <v-btn to="./resume">
               Resume
             </v-btn>
@@ -35,3 +35,13 @@
     </v-row>
   </v-container>
 </template>
+
+<script>
+export default {
+  name: 'IndexPage',
+}
+</script>
+
+<style>
+
+</style>
