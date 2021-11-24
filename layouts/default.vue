@@ -5,7 +5,7 @@
       fixed
       app
     >
-      <v-btn to="./" v-text="title"></v-btn>
+      <v-btn outlined to="/" v-text="title"></v-btn>
       <v-spacer />
       <v-btn icon href="https://github.com/jonbiveo" target="_blank"><v-icon>mdi-github</v-icon></v-btn>
       <v-btn icon href="https://www.linkedin.com/in/logantedmonds/"><v-icon>mdi-linkedin</v-icon></v-btn>

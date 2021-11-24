@@ -1,5 +1,10 @@
 <template>
   <v-card max-width="900px" class="mx-auto">
+    <div class="text-center">
+      <v-btn class="ma-4" rounded outlined href="Edmonds_Logan.pdf" download>
+        Download PDF
+      </v-btn>
+    </div>
     <v-card-title primary-title class="justify-center text-h2">
       Logan Edmonds
     </v-card-title>
@@ -53,6 +58,7 @@
 
     
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
+      <v-icon medium>mdi-ethereum</v-icon>
       Crypto Goals Tracker
     </v-card-text>
     <v-card-text class="px-8">
@@ -60,6 +66,7 @@
     </v-card-text>
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
+      <v-icon medium>mdi-slot-machine</v-icon>
       Vending Machine CLI
     </v-card-text>
     <v-card-text class="px-8">
@@ -67,6 +74,7 @@
     </v-card-text>
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
+      <v-icon medium>mdi-currency-usd</v-icon>
       TEnmo (Tech Elevator Venmo Clone)
     </v-card-text>
     <v-card-text class="px-8">
@@ -74,6 +82,7 @@
     </v-card-text>
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
+      <v-icon medium>mdi-home</v-icon>
       House Planner
     </v-card-text>
     <v-card-text class="px-8">
@@ -132,7 +141,6 @@
 <script>
 export default {
   name: 'ResumeComp',
-
 }
 </script>
 
