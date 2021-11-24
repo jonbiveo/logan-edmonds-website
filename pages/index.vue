@@ -11,7 +11,7 @@
         </v-col>
       </v-row>
       <v-row justify="center" align="center" class="mb-6">
-        <v-col>
+        <v-col cols="4">
           <v-card class="pa-2 cyan darken-4" min-height="100px" max-width="400px">
             <v-card-actions class="justify-center">
               <v-btn outlined to="./about">
@@ -32,7 +32,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col>
+        <v-col cols="3">
           <v-card class="pa-2 cyan darken-4" min-height="100px" max-width="400px">
             <v-card-actions class="justify-center">
               <v-btn outlined to="./resume">
