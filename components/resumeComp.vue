@@ -59,7 +59,7 @@
     
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-ethereum</v-icon>
-      Crypto Goals Tracker
+      <a href="https://github.com/Tuxman/crypto-goals">Crypto Goals Tracker</a>
     </v-card-text>
     <v-card-text class="px-8">
       Application to track and calculate cryptocurrencies projected and historical data using Vue.js. Planning to employ GraphQL, MongoDB, and Nuxt.js. Goal is to authenticate users, track types of coins, graph and project value of coins. Use historical data for predictive analytics of future values.
@@ -67,7 +67,7 @@
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-slot-machine</v-icon>
-      Vending Machine CLI
+      <a href="https://github.com/jonbiveo/Vending-Machine-CLI">Vending Machine CLI</a>
     </v-card-text>
     <v-card-text class="px-8">
       Created a command-line interface vending machine application using Java and logged sales to a file. Leveraged JUnit to test the project.

@@ -1,19 +1,17 @@
 <template>
-  <v-card class="mx-auto">
-    <v-container>
+  <v-card class="mx-auto" max-width="940px">
+    <v-container fluid>
       <v-row class="mb-6">
-        <v-col>
-          <v-card class="mx-auto cyan darken-3" max-width="800px">
+        <v-col cols="12">
+          <v-card class="mx-auto cyan darken-3" max-width="500px">
             <v-card-title class="headline justify-center">
-              Welcome to my personal website
+              Logan Edmonds
             </v-card-title>
           </v-card>
         </v-col>
-      </v-row>
-      <v-row justify="center" align="center" class="mb-6">
-        <v-col cols="4">
-          <v-card class="pa-2 cyan darken-4" min-height="100px" max-width="400px">
-            <v-card-actions class="justify-center">
+        <v-col lg="6" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16 mx-12">
               <v-btn outlined to="./about">
                 About
               </v-btn>
@@ -32,39 +30,38 @@
             </div>
           </v-card>
         </v-col>
-        <v-col cols="3">
-          <v-card class="pa-2 cyan darken-4" min-height="100px" max-width="400px">
-            <v-card-actions class="justify-center">
+        <v-col lg="6" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16 mx-12">
               <v-btn outlined to="./resume">
                 Resume
               </v-btn>
             </v-card-actions>
+            <v-img contain :src="resumeSrc" max-height="260px" max-width="250px" class="mx-auto"></v-img>
           </v-card>
         </v-col>
-      </v-row>
-      <v-row justify="center" align="center" class="mb-6">
-        <v-col>
-          <v-card class="pa-2 cyan darken-4" min-height="100px">
-            <v-card-actions class="justify-center">
+        <v-col lg="4" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16">
               <v-btn outlined>
                 Canon Calculators
               </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col>
-          <v-card class="pa-2 cyan darken-4" min-height="100px">
-            <v-card-actions class="justify-center">
+        <v-col lg="4" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16">
               <v-btn outlined>
                 House Planner
               </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col>
-          <v-card class="pa-2 cyan darken-4" min-height="100px">
-            <v-card-actions class="justify-center">
-              <v-btn outlined>
+        <v-col lg="4" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16">
+              <v-btn outlined href="https://github.com/Tuxman/crypto-goals">
                 Crypto Goals
               </v-btn>
             </v-card-actions>
@@ -78,6 +75,11 @@
 <script>
 export default {
   name: 'IndexPage',
+  data() {
+    return {
+      resumeSrc: require("@/static/ResumeScreenshot.png")
+    }
+  }
 }
 </script>
 
