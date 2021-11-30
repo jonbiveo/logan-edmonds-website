@@ -9,9 +9,15 @@
       Logan Edmonds
     </v-card-title>
     <v-row justify="center">
-      <v-icon class="pa-2">mdi-github</v-icon>
-      <v-icon class="pa-2">mdi-linkedin</v-icon>
-      <v-icon class="pa-2">mdi-email</v-icon>
+      <v-btn icon href="https://github.com/jonbiveo" target="_blank">
+        <v-icon class="pa-2">mdi-github</v-icon>
+      </v-btn>
+      <v-btn icon href="https://www.linkedin.com/in/logantedmonds/" target="_blank">
+        <v-icon class="pa-2">mdi-linkedin</v-icon>
+      </v-btn>
+      <v-btn icon href="mailto:logantedmonds@gmail.com">
+        <v-icon class="pa-2">mdi-email</v-icon>
+      </v-btn>
     </v-row>
 
     <v-card-text class="mb-n3 text-h4 font-weight-bold">
@@ -59,7 +65,7 @@
     
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-ethereum</v-icon>
-      <a href="https://github.com/Tuxman/crypto-goals">Crypto Goals Tracker</a>
+      <a href="https://github.com/Tuxman/crypto-goals" target="_blank">Crypto Goals Tracker</a>
     </v-card-text>
     <v-card-text class="px-8">
       Application to track and calculate cryptocurrencies projected and historical data using Vue.js. Planning to employ GraphQL, MongoDB, and Nuxt.js. Goal is to authenticate users, track types of coins, graph and project value of coins. Use historical data for predictive analytics of future values.
@@ -67,7 +73,7 @@
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-slot-machine</v-icon>
-      <a href="https://github.com/jonbiveo/Vending-Machine-CLI">Vending Machine CLI</a>
+      <a href="https://github.com/jonbiveo/Vending-Machine-CLI" target="_blank">Vending Machine CLI</a>
     </v-card-text>
     <v-card-text class="px-8">
       Created a command-line interface vending machine application using Java and logged sales to a file. Leveraged JUnit to test the project.
@@ -75,7 +81,7 @@
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-currency-usd</v-icon>
-      TEnmo (Tech Elevator Venmo Clone)
+      <a href="https://github.com/jonbiveo/tenmo" target="_blank">TEnmo (Tech Elevator Venmo Clone)</a>
     </v-card-text>
     <v-card-text class="px-8">
       Designed and co-developed a peer-to-peer pseudo-currency transfer command line application utilizing RESTful API, PostgreSQL database, and Java. Users are able to send, request, and approve transfers.
@@ -83,7 +89,7 @@
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-home</v-icon>
-      House Planner
+      <a href="https://github.com/jonbiveo/house-planner" target="_blank">House Planner</a>
     </v-card-text>
     <v-card-text class="px-8">
       Vue.js frontend application with a Java backend. House planner that allows you to select the most common options when building a house and displays approximate cost according to an external API’s information. Coded login, registration, and requirements for passwords on a 4-person virtual team. Contributed to front-end design and back-end logic.

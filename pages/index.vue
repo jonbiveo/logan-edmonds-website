@@ -43,7 +43,7 @@
         <v-col lg="4" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined href="https://github.com/jonbiveo/Canon-Calculators">
+              <v-btn outlined href="https://github.com/jonbiveo/Canon-Calculators" target="_blank">
                 Canon Calculators
               </v-btn>
             </v-card-actions>
@@ -52,7 +52,7 @@
         <v-col lg="4" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined href="https://github.com/jonbiveo/house-planner">
+              <v-btn outlined href="https://github.com/jonbiveo/house-planner" target="_blank">
                 House Planner
               </v-btn>
             </v-card-actions>
@@ -61,7 +61,7 @@
         <v-col lg="4" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined href="https://github.com/Tuxman/crypto-goals">
+              <v-btn outlined href="https://github.com/Tuxman/crypto-goals" target="_blank">
                 Crypto Goals
               </v-btn>
             </v-card-actions>
@@ -70,7 +70,7 @@
         <v-col lg="6" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined href="https://github.com/jonbiveo/tenmo">
+              <v-btn outlined href="https://github.com/jonbiveo/tenmo" target="_blank">
                 Tenmo
               </v-btn>
             </v-card-actions>
@@ -79,7 +79,7 @@
         <v-col lg="6" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined href="https://github.com/jonbiveo/Vending-Machine-CLI">
+              <v-btn outlined href="https://github.com/jonbiveo/Vending-Machine-CLI" target="_blank">
                 Vending Machine CLI
               </v-btn>
             </v-card-actions>
