@@ -43,7 +43,7 @@
         <v-col lg="4" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined>
+              <v-btn outlined href="https://github.com/jonbiveo/Canon-Calculators">
                 Canon Calculators
               </v-btn>
             </v-card-actions>
@@ -52,7 +52,7 @@
         <v-col lg="4" sm="6" xs="12">
           <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
             <v-card-actions class="justify-center px-16">
-              <v-btn outlined>
+              <v-btn outlined href="https://github.com/jonbiveo/house-planner">
                 House Planner
               </v-btn>
             </v-card-actions>
@@ -63,6 +63,24 @@
             <v-card-actions class="justify-center px-16">
               <v-btn outlined href="https://github.com/Tuxman/crypto-goals">
                 Crypto Goals
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col lg="6" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16">
+              <v-btn outlined href="https://github.com/jonbiveo/tenmo">
+                Tenmo
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col lg="6" sm="6" xs="12">
+          <v-card class="mx-auto pa-2 cyan darken-4" min-height="340px" max-width="300px">
+            <v-card-actions class="justify-center px-16">
+              <v-btn outlined href="https://github.com/jonbiveo/Vending-Machine-CLI">
+                Vending Machine CLI
               </v-btn>
             </v-card-actions>
           </v-card>
