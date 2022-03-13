@@ -4,6 +4,7 @@
       :clipped-left="clipped"
       fixed
       app
+      color="transparent"
     >
       <v-btn outlined to="/" v-text="title"></v-btn>
       <v-spacer />
