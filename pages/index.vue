@@ -8,17 +8,9 @@ export default {
   name: 'IndexPage',
   components: {
     MainCards
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
-
-<style>
-
-</style>
 
 // <v-icon>mdi-language-javascript</v-icon>
 // <v-icon>mdi-language-java</v-icon>
