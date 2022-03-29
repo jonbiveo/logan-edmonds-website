@@ -14,7 +14,7 @@
           Logan Edmonds
         </v-card-title>
         <v-card-text class="text-center">
-          A Java full-stack bootcamp graduate
+          A full-stack bootcamp graduate
         </v-card-text>
       </v-col>
     </v-row>
