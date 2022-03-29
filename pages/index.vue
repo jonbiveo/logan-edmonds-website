@@ -1,13 +1,13 @@
 <template>
-  <MainCards />
+  <HomeCard />
 </template>
 
 <script>
-import MainCards from "../components/Home/MainCards.vue"
+import HomeCard from "../components/Home/HomeCard.vue"
 export default {
   name: 'IndexPage',
   components: {
-    MainCards
+    HomeCard
   }
 }
 </script>
