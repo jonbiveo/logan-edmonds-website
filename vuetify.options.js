@@ -5,7 +5,7 @@ export default {
       dark: {
         primary: '#001254',
         accent: '#001254',
-        secondary: '#001254',
+        secondary: '#FFFFFFF',
         info: '#001254',
         warning: '#001254',
         error: '#001254',

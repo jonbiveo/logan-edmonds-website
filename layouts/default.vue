@@ -1,5 +1,4 @@
 <template>
-<!-- v-app id="main" dark :style="{background: $vuetify.theme.themes[theme].background}" -->
   <v-app id="app" dark>
     <v-app-bar
       absolute
@@ -13,7 +12,6 @@
     >
       <v-container max-width="1200px" class="d-flex justify-center align-center">
         <v-row justify="center">
-        <!-- <v-col cols="12" class="d-inline-flex align-center"> -->
           <v-col
           class="d-inline-flex justify-center align-center mt-2"
           cols="12"
@@ -52,19 +50,33 @@
           xl="3"
           >
             <v-btn icon><v-icon>mdi-weather-night</v-icon></v-btn>
-          <!-- </v-col> -->
-          <!-- <v-spacer></v-spacer>
-          <v-col class="d-flex justify-center">
-            <v-btn icon href="https://github.com/jonbiveo" target="_blank"><v-icon>mdi-github</v-icon></v-btn>
-            <v-btn icon href="https://www.linkedin.com/in/logantedmonds/"><v-icon>mdi-linkedin</v-icon></v-btn>
-            <v-btn icon href="mailto:logantedmonds@gmail.com"><v-icon>mdi-email</v-icon></v-btn>
-          </v-col> -->
           </v-col>
         </v-row>
       </v-container>
     </v-app-bar>
+    <v-navigation-drawer
+    app
+    expand-on-hover
+    permanent
+    >
+    <v-list>
+      <v-list-item-group>
+        <v-list-item
+        v-for="nav in sideNav"
+        :key="nav.name"
+        :to="nav.link"
+        >
+          <v-list-item-icon>
+            <v-icon v-text="nav.icon"></v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title v-text="nav.name"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+    </v-navigation-drawer>
     <v-main id="main">
-        <!-- <div style="position: relative; z-index: 0; top: 100px; height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M 0 47 C 190 121 350 -4 500 49.98 L 500 700 L 0 700 Z" style="stroke: none; fill: #08f;"></path></svg></div> -->
       <v-container id="container">
         <Nuxt />
       </v-container>
@@ -84,7 +96,24 @@ export default {
   data () {
     return {
       fixed: false,
-      title: 'Logan Edmonds'
+      title: 'Logan Edmonds',
+      sideNav: [
+        {
+          name: 'Home',
+          icon: 'mdi-home-circle-outline',
+          link: '/'
+        },
+        {
+          name: 'About',
+          icon: 'mdi-account',
+          link: '/About'
+        },
+        {
+          name: 'Resume',
+          icon: 'mdi-note-text-outline',
+          link: '/Resume'
+        },
+      ]
     }
   },
   computed:{
