@@ -32,7 +32,6 @@
               <v-divider
               class="mx-2 pb-3"
               vertical
-              color="#FFFFFF"
               style="display: inline;"
               ></v-divider>
             <v-btn
@@ -44,7 +43,6 @@
               <v-divider
               class="mx-2 pb-3"
               vertical
-              color="#FFFFFF"
               style="display: inline;"
               ></v-divider>
             <v-btn
