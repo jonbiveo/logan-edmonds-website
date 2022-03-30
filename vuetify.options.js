@@ -4,13 +4,13 @@ export default {
     themes: {
       dark: {
         primary: '#001254',
-        accent: '#060A23',
-        secondary: '#060A23',
-        info: '#052490',
-        warning: '#33c',
-        error: '#33c',
-        success: '#33c',
-        background: '#040D20'
+        accent: '#001254',
+        secondary: '#001254',
+        info: '#001254',
+        warning: '#001254',
+        error: '#001254',
+        success: '#001254',
+        background: '#001254'
       },
       light: {
         primary: '#052490',

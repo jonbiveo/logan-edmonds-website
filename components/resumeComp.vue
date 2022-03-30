@@ -1,5 +1,5 @@
 <template>
-  <v-card max-width="900px" class="mx-auto">
+  <v-card max-width="900px" class="mx-auto mb-12">
     <div class="text-center">
       <v-btn class="ma-4" rounded outlined href="Edmonds_Logan.pdf" download>
         Download PDF
