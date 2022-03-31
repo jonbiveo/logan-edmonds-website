@@ -58,23 +58,24 @@
     app
     expand-on-hover
     permanent
+    color="sidebar"
     >
-    <v-list>
-      <v-list-item-group>
-        <v-list-item
-        v-for="nav in sideNav"
-        :key="nav.name"
-        :to="nav.link"
-        >
-          <v-list-item-icon>
-            <v-icon v-text="nav.icon"></v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title v-text="nav.name"></v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list-item-group>
-    </v-list>
+      <v-list>
+        <v-list-item-group>
+          <v-list-item
+          v-for="nav in sideNav"
+          :key="nav.name"
+          :to="nav.link"
+          >
+            <v-list-item-icon>
+              <v-icon v-text="nav.icon"></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title v-text="nav.name"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
     </v-navigation-drawer>
     <v-main id="main">
       <v-container id="container">
@@ -82,8 +83,10 @@
       </v-container>
     </v-main>
     <v-footer
-      :absolute="fixed"
       app
+      inset
+      class="justify-center pl-0"
+      color="footer"
     >
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
