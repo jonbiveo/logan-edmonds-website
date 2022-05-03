@@ -84,7 +84,6 @@
     </v-main>
     <v-footer
       app
-      inset
       class="justify-center pl-0"
       color="footer"
     >
