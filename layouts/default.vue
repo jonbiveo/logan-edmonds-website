@@ -20,7 +20,7 @@
           xl="3"
           >
             <v-app-bar-title>
-              <v-btn outlined to="/" v-text="title"></v-btn>
+              <v-btn to="/" outlined>{{ title }}</v-btn>
             </v-app-bar-title>
           </v-col>
           <v-col
