@@ -3,14 +3,14 @@ export default {
     dark: true,
     themes: {
       dark: {
-        primary: '#0e151a',
+        primary: '#070E13',
         accent: '#001254',
         secondary: '#FFFFFF',
         info: '#001254',
         warning: '#001254',
         error: '#001254',
         success: '#001254',
-        background: '#0e151a',
+        background: '#12161D',
         sidebar: '#030913',
         footer: '#1D1D1E',
       },
@@ -22,7 +22,7 @@ export default {
         warning: '#3fd',
         error: '#3fd',
         success: '#3fd',
-        background: '#0C0026'
+        background: '#0A151E'
       },
     },
   },

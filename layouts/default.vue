@@ -6,6 +6,7 @@
       dense
       flat
       height="90px"
+      color="rgba(0,0,0,0)"
     >
       <v-container max-width="1200px" class="d-flex justify-center align-center">
         <v-row justify="center">
@@ -28,14 +29,12 @@
           xl="3"
           >
             <v-btn
-            rounded
-            small
+            plain
             class="mr-4"
             to="/About"
             >About</v-btn>
             <v-btn
-            rounded
-            small
+            plain
             to="/Resume"
             >Resume</v-btn>
           </v-col>
@@ -58,10 +57,46 @@
     </v-main>
     <v-footer
       app
+      bottom
+      absolute
       class="justify-center pl-0"
-      color="footer"
+      color="background"
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-card class="text-center" color="rgba(0,0,0,0)" flat width="90%">
+        <v-card-text class="text-center">
+          <v-btn
+          icon
+          href="https://github.com/jonbiveo"
+          target="_blank"
+          class="pt-1"
+          ><v-icon>mdi-github</v-icon></v-btn>
+            <v-divider
+            class="mx-2 pb-3"
+            vertical
+            style="display: inline;"
+            ></v-divider>
+          <v-btn
+          icon
+          href="https://www.linkedin.com/in/logantedmonds/"
+          target="_blank"
+          class="pt-1"
+          ><v-icon>mdi-linkedin</v-icon></v-btn>
+            <v-divider
+            class="mx-2 pb-3"
+            vertical
+            style="display: inline;"
+            ></v-divider>
+          <v-btn
+          icon
+          href="mailto:logantedmonds@gmail.com"
+          class="pt-1"
+          ><v-icon>mdi-email</v-icon></v-btn>
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-text>
+          &copy; {{ new Date().getFullYear() }}
+        </v-card-text>
+      </v-card>
     </v-footer>
   </v-app>
 </template>
@@ -135,46 +170,26 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-/* 
-#main {
- background-color: rgba(14,21,26,255);
-} */
-
-#header {
-background: rgba( 17, 192, 234, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5.5px );
--webkit-backdrop-filter: blur( 5.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-/* #main {
-  background: url(~/assets/bg-website.svg);
-  position: absolute;
-  background-size: cover;
-  width: 100%;
-  min-height: 85%;
-  top: 15%;
-} */
-
-/* #app {
-  background-image: linear-gradient(
-  170deg,
-  hsl(240deg 88% 3%) 0%,
-  hsl(234deg 63% 11%) 20%,
-  hsl(226deg 90% 15%) 35%,
-  hsl(227deg 97% 21%) 47%,
-  hsl(235deg 79% 30%) 56%,
-  hsl(244deg 60% 39%) 64%,
-  hsl(245deg 44% 47%) 72%,
-  hsl(244deg 38% 54%) 81%,
-  hsl(243deg 38% 62%) 90%,
-  hsl(242deg 36% 69%) 100%);
-} */
 
 #container {
   max-width: 1200px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #12161D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 </style>
