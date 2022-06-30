@@ -1,14 +1,11 @@
 <template>
-  <v-app id="app" dark>
+  <v-app id="app" :style="{background: $vuetify.theme.themes[theme].background}">
     <v-app-bar
-      absolute
+      id="header"
       app
-      shrink-on-scroll
       dense
-      prominent
       flat
-      height="200px"
-      color="rgba(0, 0, 0, 0)"
+      height="90px"
     >
       <v-container max-width="1200px" class="d-flex justify-center align-center">
         <v-row justify="center">
@@ -138,18 +135,30 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-
+/* 
 #main {
+ background-color: rgba(14,21,26,255);
+} */
+
+#header {
+background: rgba( 17, 192, 234, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* #main {
   background: url(~/assets/bg-website.svg);
   position: absolute;
   background-size: cover;
   width: 100%;
   min-height: 85%;
   top: 15%;
-  /* background-image: linear-gradient(to bottom right, rgb(3, 3, 34), rgb(6, 6, 77)); */
-}
+} */
 
-#app {
+/* #app {
   background-image: linear-gradient(
   170deg,
   hsl(240deg 88% 3%) 0%,
@@ -162,7 +171,7 @@ p, h1, h2, h3, h4, h5, h6 {
   hsl(244deg 38% 54%) 81%,
   hsl(243deg 38% 62%) 90%,
   hsl(242deg 36% 69%) 100%);
-}
+} */
 
 #container {
   max-width: 1200px;
