@@ -8,7 +8,7 @@
       height="90px"
       color="rgba(0,0,0,0)"
     >
-      <v-container max-width="1200px" class="d-flex justify-center align-center">
+      <v-container class="d-flex justify-center align-center">
         <v-row justify="center">
           <v-col
           class="d-inline-flex justify-center align-center mt-2"
