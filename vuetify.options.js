@@ -13,6 +13,7 @@ export default {
         background: '#12161D',
         sidebar: '#030913',
         footer: '#1D1D1E',
+        anchor: '#42abe3'
       },
       light: {
         primary: '#052490',
