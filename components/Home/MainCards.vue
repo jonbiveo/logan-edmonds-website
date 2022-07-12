@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="1200px">
+  <v-card class="mx-auto transparent" flat max-width="1200px">
     <v-row class="mb-6">
       <v-col v-for="card in cards" :key="card.id" :cols="card.cols" :sm="card.sm" :lg="card.lg" :xl="card.xl">
         <v-card class="mx-4 cyan darken-4" min-height="100px">
