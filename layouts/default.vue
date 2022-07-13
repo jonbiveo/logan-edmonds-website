@@ -5,51 +5,48 @@
       app
       dense
       flat
-      height="90px"
       color="rgba(0,0,0,0)"
+      class="mt-4"
     >
-      <v-container class="d-flex justify-center align-center">
-        <v-row justify="center">
-          <v-col
-          class="d-inline-flex justify-center align-center mt-2"
-          cols="12"
-          md="3"
-          lg="3"
-          xl="3"
-          >
-            <v-app-bar-title>
-              <v-btn to="/" outlined>{{ title }}</v-btn>
-            </v-app-bar-title>
-          </v-col>
-          <v-col
-          class="d-inline-flex justify-center align-center"
-          cols="12"
-          md="3"
-          lg="3"
-          xl="3"
-          >
-            <v-btn
-            plain
-            class="mr-4"
-            to="/About"
-            >About</v-btn>
-            <v-btn
-            plain
-            to="/Resume"
-            >Resume</v-btn>
-          </v-col>
-          <v-col
-          class="d-flex justify-center"
-          cols="12"
-          md="3"
-          lg="3"
-          xl="3"
-          >
-            <v-btn icon><v-icon>mdi-weather-night</v-icon></v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
+      <v-app-bar-nav-icon
+      class="d-flex d-sm-none"
+      @click="drawer = true"
+      ></v-app-bar-nav-icon>
+      <v-toolbar-title>
+        <v-btn to="/" outlined>{{ title }}</v-btn>
+      </v-toolbar-title>
+      <v-btn
+      plain
+      class="mr-4 d-none d-sm-flex"
+      to="/About"
+      >About</v-btn>
+      <v-btn
+      plain
+      class="d-none d-sm-flex"
+      to="/Resume"
+      >Resume</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn class="d-none d-sm-flex" text><v-icon>mdi-weather-night</v-icon></v-btn>      
     </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+        >
+          <v-list-item v-for="(item, index) in sideNav" :key="index" class="justify-center">
+          <v-btn text :to="item.link">
+            <v-list-item-title><v-icon>{{ item.icon }}</v-icon> {{ item.name }}</v-list-item-title>
+          </v-btn>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
     <v-main id="main">
       <v-container id="container">
         <Nuxt />
@@ -59,7 +56,7 @@
       app
       bottom
       absolute
-      class="justify-center pl-0"
+      class="justify-center"
       color="background"
     >
       <v-card class="text-center" color="rgba(0,0,0,0)" flat width="90%">
@@ -106,6 +103,7 @@ export default {
   name: 'DefaultView',
   data () {
     return {
+      drawer: false,
       fixed: false,
       title: 'Logan Edmonds',
       sideNav: [
@@ -123,6 +121,11 @@ export default {
           name: 'Resume',
           icon: 'mdi-note-text-outline',
           link: '/Resume'
+        },
+        {
+          name: '',
+          icon: 'mdi-weather-night',
+          link: ''
         },
       ]
     }
