@@ -25,8 +25,8 @@ export default {
           sm: '6',
           lg: '4',
           xl: '4',
-          link: 'http://nucarbit.cc/',
-          text: 'NuCarbit.cc'
+          link: 'https://github.com/Tuxman/NuCarbit',
+          text: 'NuCarbit'
         },
         {
           cols: '12',
