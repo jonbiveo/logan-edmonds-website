@@ -64,7 +64,7 @@
 
     <v-card-text class="mb-n7 text-subtitle-1 font-weight-bold">
       <v-icon medium>mdi-ethereum</v-icon>
-      <a href="http://nucarbit.cc/" target="_blank">NuCarbit.cc (ETHDenver Hackathon 2022)</a>
+      <a href="https://github.com/Tuxman/NuCarbit" target="_blank">NuCarbit (ETHDenver Hackathon 2022)</a>
     </v-card-text>
     <v-card-text class="px-8">
       A hackathon project built around the idea of providing carbon credit security via blockchain tokenization. Built the front-end for this project, with MetaMask and Coinbase wallet functionality.

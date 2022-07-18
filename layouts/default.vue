@@ -7,7 +7,7 @@
       id="header"
       app
       dense
-      flat
+      text
       color="rgba(0,0,0,0)"
       class="mt-4"
     >
@@ -21,17 +21,33 @@
       <v-btn
         plain
         class="d-none d-sm-flex ml-4"
-        to="/About"
-      >
-        About
-      </v-btn>
-      <v-btn
-        plain
-        class="d-none d-sm-flex"
         to="/Resume"
       >
         Resume
       </v-btn>
+      <v-menu
+        plain
+        open-on-hover
+        class="d-none d-sm-flex"
+      >
+        <template #activator="{ on, attrs }">
+          <v-btn
+            plain
+            v-bind="attrs"
+            v-on="on"
+          >
+            Projects
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item
+          v-for="(item, index) in projectNav"
+          :key="index"
+          >
+            <v-btn :href="item.link" target="_blank">{{ item.name }}</v-btn>
+          </v-list-item>
+        </v-list>
+      </v-menu>
       <v-spacer></v-spacer>
       <v-btn
         class="d-none d-sm-flex"
@@ -82,7 +98,8 @@
         class="text-center"
         color="rgba(0,0,0,0)"
         width="90%"
-        flat
+        elevation="0"
+        text
       >
         <v-card-text class="text-center">
           <v-btn
@@ -143,19 +160,46 @@ export default {
           link: '/'
         },
         {
-          name: 'About',
-          icon: 'mdi-account',
-          link: '/About'
-        },
-        {
           name: 'Resume',
           icon: 'mdi-note-text-outline',
           link: '/Resume'
         },
         {
+          name: 'Projects',
+          icon: 'mdi-account',
+          link: '/Projects'
+        },
+        {
           name: '',
           icon: 'mdi-weather-night',
           link: ''
+        }
+      ],
+      projectNav: [
+        {
+          name: 'NuCarbit',
+          icon: 'mdi-home-circle-outline',
+          link: 'https://github.com/Tuxman/NuCarbit'
+        },
+        {
+          name: 'Morra',
+          icon: 'mdi-note-text-outline',
+          link: 'https://github.com/jonbiveo/logan-edmonds-morra'
+        },
+        {
+          name: 'Crypto Goals',
+          icon: 'mdi-account',
+          link: 'https://github.com/Tuxman/crypto-goals'
+        },
+        {
+          name: 'House Planner',
+          icon: 'mdi-weather-night',
+          link: 'https://github.com/jonbiveo/house-planner'
+        },
+        {
+          name: 'Tenmo',
+          icon: 'mdi-weather-night',
+          link: 'https://github.com/jonbiveo/tenmo'
         },
       ]
     }
