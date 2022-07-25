@@ -2,9 +2,9 @@
   <v-card class="mx-auto transparent" flat max-width="1200px">
     <v-row class="mb-6">
       <v-col v-for="card in cards" :key="card.id" :cols="card.cols" :sm="card.sm" :lg="card.lg" :xl="card.xl">
-        <v-card class="mx-4 cyan darken-4" min-height="100px">
-          <v-card-actions class="justify-center">
-            <v-btn flat class="transparent" elevation="0" :href="card.link" target="_blank">
+        <v-card class="cardsBG mx-4">
+          <v-card-actions class="cardsBG justify-center">
+            <v-btn text class="transparent" elevation="0" :href="card.link" target="_blank">
               {{ card.text }}
             </v-btn>
           </v-card-actions>
@@ -73,3 +73,14 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.cardsBG {
+  background: rgba(124, 232, 252, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(70,254,192,0.1);
+}
+
+</style>
