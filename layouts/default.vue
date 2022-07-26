@@ -50,10 +50,11 @@
       </v-menu>
       <v-spacer></v-spacer>
       <v-btn
+        icon
         class="d-none d-sm-flex"
-        text
+        @click="toggleTheme"
       >
-        <v-icon>mdi-weather-night</v-icon>
+        <v-icon>{{ $vuetify.theme.dark ? 'mdi-white-balance-sunny' : 'mdi-weather-night' }}</v-icon>
       </v-btn>      
     </v-app-bar>
     <v-navigation-drawer
@@ -207,6 +208,25 @@ export default {
   computed:{
     theme(){
       return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+    }
+  },
+  mounted() {
+    const theme = localStorage.getItem("dark_theme");
+    if (theme) {
+      if (theme === "true") {
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.$vuetify.theme.dark = false;
+      }
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      this.$vuetify.theme.dark = true;
+      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
+    }
+  },
+  methods: {
+    toggleTheme() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
     }
   }
 }

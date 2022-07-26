@@ -16,14 +16,13 @@ export default {
         anchor: '#42abe3'
       },
       light: {
-        primary: '#052490',
-        accent: '#052490',
-        secondary: '#3fd',
-        info: '#3fd',
-        warning: '#3fd',
-        error: '#3fd',
-        success: '#3fd',
-        background: '#0A151E'
+        primary: '#1976D2',
+        secondary: '#424242',
+        accent: '#82B1FF',
+        error: '#FF5252',
+        info: '#2196F3',
+        success: '#4CAF50',
+        warning: '#FFC107',
       },
     },
   },
