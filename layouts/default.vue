@@ -6,10 +6,9 @@
     <v-app-bar
       id="header"
       app
-      dense
       text
       color="rgba(0,0,0,0)"
-      class="mt-4"
+      fluid
     >
       <v-app-bar-nav-icon
         class="d-flex d-sm-none"
