@@ -7,7 +7,7 @@
       id="header"
       app
       text
-      color="rgba(0,0,0,0)"
+      color="header"
       fluid
     >
       <v-app-bar-nav-icon
@@ -276,7 +276,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #12161D;
+  background-color: rgba(0,0,0,0);
 }
 
 ::-webkit-scrollbar-thumb {

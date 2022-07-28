@@ -13,7 +13,8 @@ export default {
         background: '#12161D',
         sidebar: '#030913',
         footer: '#1D1D1E',
-        anchor: '#42abe3'
+        anchor: '#42abe3',
+        header: '#16BAC5'
       },
       light: {
         primary: '#1976D2',
