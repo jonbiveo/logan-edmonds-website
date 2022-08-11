@@ -26,13 +26,9 @@ $ npm run generate
 * [Nuxt.js](https://nuxtjs.org/) - An open source framework making web development simple and powerful.
 * [Vuetify.js](https://vuetifyjs.com/en/introduction/why-vuetify/) - Vuetify is a Vue UI Library with beautifully handcrafted Material Components.
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
-* **Logan Edmonds** - *Initial work* - [jonbiveo](https://github.com/jonbiveo)
+* **Logan Edmonds** - *Owner of website* - [jonbiveo](https://github.com/jonbiveo)
 
 ## License
 
