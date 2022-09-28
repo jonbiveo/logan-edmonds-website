@@ -3,12 +3,12 @@
     <v-row class="mt-12" justify="center">
       <v-col cols="12" md="6" lg="6" xl="6" class="d-flex justify-center align-center">
         <v-card width="auto" class="justify-center">
-          <v-img 
+          <!-- <v-img 
           :src="require('~/assets/Edmonds_Logan.jpg')"
           contain
           width="auto"
           max-width="400px"
-          ></v-img>
+          ></v-img> -->
         </v-card>
       </v-col>
       <v-col cols="12" md="6" lg="6" xl="6"  class="d-flex align-center justify-center mx-n12">

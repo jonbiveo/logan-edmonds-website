@@ -1,83 +1,48 @@
 <template>
   <v-app
     id="app"
-    :style="{background: $vuetify.theme.themes[theme].background}"
+    :style="{ background: $vuetify.theme.themes[theme].background }"
   >
-    <v-app-bar
-      id="header"
-      app
-      text
-      color="header"
-      fluid
-    >
-      <v-app-bar-nav-icon
-        class="d-flex d-sm-none"
-        @click="drawer = true"
-      ></v-app-bar-nav-icon>
+    <v-app-bar id="header" app text color="header" fluid>
+      <v-spacer />
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>
         <v-btn to="/" outlined>{{ title }}</v-btn>
       </v-toolbar-title>
-      <v-btn
-        plain
-        class="d-none d-sm-flex ml-4"
-        to="/Resume"
-      >
-        Resume
-      </v-btn>
-      <v-menu
-        plain
-        open-on-hover
-        class="d-none d-sm-flex"
-      >
+      <v-btn plain class="d-none d-sm-flex ml-4" to="/Resume"> Resume </v-btn>
+      <v-menu plain open-on-hover class="d-none d-sm-flex">
         <template #activator="{ on, attrs }">
-          <v-btn
-            plain
-            v-bind="attrs"
-            v-on="on"
-          >
-            Projects
-          </v-btn>
+          <v-btn plain v-bind="attrs" v-on="on"> Projects </v-btn>
         </template>
         <v-list>
-          <v-list-item
-          v-for="(item, index) in projectNav"
-          :key="index"
-          >
+          <v-list-item v-for="(item, index) in projectNav" :key="index">
             <v-btn :href="item.link" target="_blank">{{ item.name }}</v-btn>
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-spacer></v-spacer>
-      <v-btn
-        icon
-        class="d-none d-sm-flex"
-        @click="toggleTheme"
-      >
-        <v-icon>{{ $vuetify.theme.dark ? 'mdi-white-balance-sunny' : 'mdi-weather-night' }}</v-icon>
-      </v-btn>      
+      <v-spacer />
+      <v-spacer />
+      <v-btn icon class="d-none d-sm-flex" @click="toggleTheme">
+        <v-icon>{{
+          $vuetify.theme.dark ? 'mdi-white-balance-sunny' : 'mdi-weather-night'
+        }}</v-icon>
+      </v-btn>
+      <v-spacer />
     </v-app-bar>
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-    >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-        >
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group>
           <v-list-item
             v-for="(item, index) in sideNav"
             :key="index"
             class="justify-center"
           >
-          <v-btn text :to="item.link">
-            <v-list-item-title>
-              <v-icon>{{ item.icon }}</v-icon>
-              {{ item.name }}
-            </v-list-item-title>
-          </v-btn>
+            <v-btn text :to="item.link">
+              <v-list-item-title>
+                <v-icon>{{ item.icon }}</v-icon>
+                {{ item.name }}
+              </v-list-item-title>
+            </v-btn>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -87,13 +52,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      app
-      bottom
-      absolute
-      class="justify-center"
-      color="background"
-    >
+    <v-footer app bottom absolute class="justify-center" color="background">
       <v-card
         class="text-center"
         color="rgba(0,0,0,0)"
@@ -113,7 +72,7 @@
           <v-divider
             class="mx-2 pb-3"
             vertical
-            style="display: inline;"
+            style="display: inline"
           ></v-divider>
           <v-btn
             icon
@@ -126,20 +85,14 @@
           <v-divider
             class="mx-2 pb-3"
             vertical
-            style="display: inline;"
+            style="display: inline"
           ></v-divider>
-          <v-btn
-            icon
-            href="mailto:logantedmonds@gmail.com"
-            class="pt-1"
-          >
+          <v-btn icon href="mailto:logantedmonds@gmail.com" class="pt-1">
             <v-icon>mdi-email</v-icon>
           </v-btn>
         </v-card-text>
         <v-divider></v-divider>
-        <v-card-text>
-          &copy; {{ new Date().getFullYear() }}
-        </v-card-text>
+        <v-card-text> &copy; {{ new Date().getFullYear() }} </v-card-text>
       </v-card>
     </v-footer>
   </v-app>
@@ -148,7 +101,7 @@
 <script>
 export default {
   name: 'DefaultView',
-  data () {
+  data() {
     return {
       drawer: false,
       fixed: false,
@@ -157,83 +110,87 @@ export default {
         {
           name: 'Home',
           icon: 'mdi-home-circle-outline',
-          link: '/'
+          link: '/',
         },
         {
           name: 'Resume',
           icon: 'mdi-note-text-outline',
-          link: '/Resume'
+          link: '/Resume',
         },
         {
           name: 'Projects',
           icon: 'mdi-account',
-          link: '/Projects'
+          link: '/Projects',
         },
         {
           name: '',
           icon: 'mdi-weather-night',
-          link: ''
-        }
+          link: '',
+        },
       ],
       projectNav: [
         {
           name: 'NuCarbit',
           icon: 'mdi-home-circle-outline',
-          link: 'https://github.com/Tuxman/NuCarbit'
+          link: 'https://github.com/Tuxman/NuCarbit',
         },
         {
           name: 'Morra',
           icon: 'mdi-note-text-outline',
-          link: 'https://github.com/jonbiveo/logan-edmonds-morra'
+          link: 'https://github.com/jonbiveo/logan-edmonds-morra',
         },
         {
           name: 'Crypto Goals',
           icon: 'mdi-account',
-          link: 'https://github.com/Tuxman/crypto-goals'
+          link: 'https://github.com/Tuxman/crypto-goals',
         },
         {
           name: 'House Planner',
           icon: 'mdi-weather-night',
-          link: 'https://github.com/jonbiveo/house-planner'
+          link: 'https://github.com/jonbiveo/house-planner',
         },
         {
           name: 'Tenmo',
           icon: 'mdi-weather-night',
-          link: 'https://github.com/jonbiveo/tenmo'
+          link: 'https://github.com/jonbiveo/tenmo',
         },
-      ]
+      ],
     }
   },
-  computed:{
-    theme(){
-      return (this.$vuetify.theme.dark) ? 'dark' : 'light'
-    }
+  computed: {
+    theme() {
+      return this.$vuetify.theme.dark ? 'dark' : 'light'
+    },
   },
   mounted() {
-    const theme = localStorage.getItem("dark_theme");
+    const theme = localStorage.getItem('dark_theme')
     if (theme) {
-      if (theme === "true") {
-        this.$vuetify.theme.dark = true;
+      if (theme === 'true') {
+        this.$vuetify.theme.dark = true
       } else {
-        this.$vuetify.theme.dark = false;
+        this.$vuetify.theme.dark = false
       }
-    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      this.$vuetify.theme.dark = true;
-      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
+    } else if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+      this.$vuetify.theme.dark = true
+      localStorage.setItem('dark_theme', this.$vuetify.theme.dark.toString())
     }
   },
   methods: {
     toggleTheme() {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
-    }
-  }
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+      localStorage.setItem('dark_theme', this.$vuetify.theme.dark.toString())
+    },
+  },
 }
 </script>
 
 <style>
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -241,7 +198,8 @@ export default {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -250,20 +208,34 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -276,7 +248,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -287,5 +259,4 @@ p, h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 </style>
